@@ -1,4 +1,4 @@
-package com.estsoft.datepickerdialog;
+package com.bit2016.datepickerdialog;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

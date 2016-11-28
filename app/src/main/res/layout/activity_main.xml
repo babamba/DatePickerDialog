@@ -7,17 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.estsoft.datepickerdialog.MainActivity">
+    tools:context="com.bit2016.datepickerdialog.MainActivity">
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DatePicker Dialog"
-        android:id="@+id/buttonDatePicker"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="dialogDatePicker"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -31,12 +22,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_above="@+id/buttonTimePicker"
-        android:layout_toLeftOf="@+id/buttonDatePicker"
-        android:layout_toStartOf="@+id/buttonDatePicker"
         android:hint="생년월일"
         android:focusable="false"
-        android:enabled="false" />
+        android:enabled="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="~"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonTimePicker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DatePicker Dialog"
+        android:id="@+id/buttonDatePicker"
+        android:onClick="dialogDatePicker"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/buttonTimePicker"
+        android:layout_alignStart="@+id/buttonTimePicker" />
+
+    <TextView
+        android:text="시작일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewstart"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/editText"
+        android:layout_toStartOf="@+id/editText"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:text="종료일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewlast"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText" />
 
 
 </RelativeLayout>

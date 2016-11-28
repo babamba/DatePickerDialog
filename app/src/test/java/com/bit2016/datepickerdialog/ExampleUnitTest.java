@@ -1,4 +1,4 @@
-package com.estsoft.datepickerdialog;
+package com.bit2016.datepickerdialog;
 
 import org.junit.Test;
 
